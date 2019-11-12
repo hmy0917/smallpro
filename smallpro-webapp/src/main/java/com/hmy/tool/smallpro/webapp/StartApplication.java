@@ -1,4 +1,4 @@
-package com.keep.kit.smallpro.webapp;
+package com.hmy.tool.smallpro.webapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,9 +9,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.autoconfigure.mongo.embedded.EmbeddedMongoAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 
-import com.keep.spring.boot.codis.EnableKeepCodisConfiguration;
-import com.keep.spring.boot.dubbo.EnableKeepDubboConfiguration;
-import com.keep.spring.boot.mongo.EnableKeepMongoConfiguration;
+
 
 /**
  * Date: 2018/9/14

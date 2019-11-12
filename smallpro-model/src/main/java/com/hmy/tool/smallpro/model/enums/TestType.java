@@ -1,4 +1,4 @@
-package com.keep.kit.smallpro.model.enums;
+package com.hmy.tool.smallpro.model.enums;
 
 /**
  * Date: 2018/11/22

@@ -1,4 +1,4 @@
-package com.keep.kit.smallpro.webapp.config;
+package com.hmy.tool.smallpro.webapp.config;
 
 import org.springframework.aop.SpringProxy;
 import org.springframework.context.annotation.Bean;

@@ -1,4 +1,4 @@
-package com.keep.kit.smallpro.model.domain.mongo;
+package com.hmy.tool.smallpro.model.domain.mongo;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

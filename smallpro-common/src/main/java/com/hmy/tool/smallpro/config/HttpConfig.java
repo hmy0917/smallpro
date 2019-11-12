@@ -1,9 +1,5 @@
-package com.keep.kit.smallpro.config;
+package com.hmy.tool.smallpro.config;
 
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Bean;
-
-import com.keep.commons.utils.http.OkHttpUtils;
 
 /**
  * Date: 2018/11/9
@@ -13,10 +9,5 @@ import com.keep.commons.utils.http.OkHttpUtils;
  */
 public class HttpConfig {
 
-    @Bean
-    @Qualifier("internalHttpUtils")
-    public OkHttpUtils internalHttpUtils() {
-        return new OkHttpUtils(1000, 1000, 1000);
-    }
 
 }

@@ -1,4 +1,4 @@
-package com.keep.kit.smallpro.model.query;
+package com.hmy.tool.smallpro.model.query;
 
 /**
  * Date: 2018/11/22

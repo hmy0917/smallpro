@@ -1,4 +1,4 @@
-package com.keep.kit.smallpro.dao.impl;
+package com.hmy.tool.smallpro.dao.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

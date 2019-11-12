@@ -1,4 +1,4 @@
-package com.keep.kit.smallpro.webapp.exception;
+package com.hmy.tool.smallpro.webapp.exception;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

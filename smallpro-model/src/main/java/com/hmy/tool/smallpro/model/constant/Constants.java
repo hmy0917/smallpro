@@ -1,4 +1,4 @@
-package com.keep.kit.smallpro.model.constant;
+package com.hmy.tool.smallpro.model.constant;
 
 /**
  * Date: 2018/10/25

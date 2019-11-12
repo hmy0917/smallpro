@@ -1,4 +1,4 @@
-package com.keep.kit.smallpro.dao;
+package com.hmy.tool.smallpro.dao;
 
 /**
  * Date: 2018/9/14

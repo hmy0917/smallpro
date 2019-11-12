@@ -1,9 +1,8 @@
-package com.keep.kit.smallpro.service.impl;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+package com.hmy.tool.smallpro.service.impl;
 
 import com.keep.kit.smallpro.dao.ITestDao;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  * Date: 2018/9/14
@@ -18,7 +17,7 @@ public class TestServiceImpl {
     private ITestDao testDao;
 
     public String getData(String str) {
-        Object o = testDao.find(str);
+        Object o = testDao.find( str );
         if (o == null) {
             return str;
         }

@@ -22,64 +22,26 @@
         <dependencies>
             <!-- project -->
             <dependency>
-                <groupId>com.keep.kit</groupId>
+                <groupId>com.hmy.tool</groupId>
                 <artifactId>smallpro-common</artifactId>
                 <version>1.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>com.keep.kit</groupId>
+                <groupId>com.hmy.tool</groupId>
                 <artifactId>smallpro-model</artifactId>
                 <version>1.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>com.keep.kit</groupId>
+                <groupId>com.hmy.tool</groupId>
                 <artifactId>smallpro-dao</artifactId>
                 <version>1.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>com.keep.kit</groupId>
+                <groupId>com.hmy.tool</groupId>
                 <artifactId>smallpro-service</artifactId>
                 <version>1.0.0-SNAPSHOT</version>
             </dependency>
 
-            <!-- keep commons -->
-            <dependency>
-                <groupId>com.keep.commons</groupId>
-                <artifactId>commons-core</artifactId>
-                <version>${keep.commons.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.keep.commons</groupId>
-                <artifactId>commons-utils</artifactId>
-                <version>${keep.commons.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.keep.commons</groupId>
-                <artifactId>commons-web</artifactId>
-                <version>${keep.commons.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.keep.commons</groupId>
-                <artifactId>commons-queue</artifactId>
-                <version>${keep.commons.queue.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.keep.monitor</groupId>
-                <artifactId>monitor-api</artifactId>
-                <version>${keep.monitor.version}</version>
-            </dependency>
-
-            <!-- keep models -->
-            <dependency>
-                <groupId>com.keep.user.account</groupId>
-                <artifactId>user-account-rpc-service</artifactId>
-                <version>0.2.9-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>com.keep.user.account</groupId>
-                <artifactId>user-account-model</artifactId>
-                <version>0.6.0-SNAPSHOT</version>
-            </dependency>
 
             <!-- spring boot 全家桶-->
             <dependency>
@@ -97,24 +59,6 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
-            <!-- keep-spring-boot -->
-            <dependency>
-                <groupId>com.keep.boot</groupId>
-                <artifactId>keep-spring-boot-starter-codis</artifactId>
-                <version>${keep.spring.boot.starter.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.keep.boot</groupId>
-                <artifactId>keep-spring-boot-starter-mongo</artifactId>
-                <version>${keep.spring.boot.starter.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.keep.boot</groupId>
-                <artifactId>keep-spring-boot-starter-dubbo</artifactId>
-                <version>${keep.spring.boot.starter.version}</version>
-            </dependency>
-
             <!-- utils -->
             <dependency>
                 <groupId>com.google.guava</groupId>
@@ -201,13 +145,6 @@
         <env>dev</env>
         <spring.boot.version>1.5.10.RELEASE</spring.boot.version>
         <slf4j.version>1.7.25</slf4j.version>
-
-        <!-- keep -->
-        <keep.commons.version>0.1.9</keep.commons.version>
-        <keep.commons.queue.version>0.4.2</keep.commons.queue.version>
-        <keep.monitor.version>2.2.0-SNAPSHOT</keep.monitor.version>
-        <keep.spring.boot.starter.version>0.3.13</keep.spring.boot.starter.version>
-        <keep.training.model.version>0.542</keep.training.model.version>
     </properties>
 
     <distributionManagement>

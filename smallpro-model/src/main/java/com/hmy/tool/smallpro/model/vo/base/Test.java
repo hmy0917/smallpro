@@ -1,4 +1,4 @@
-package com.keep.kit.smallpro.model.vo.base;
+package com.hmy.tool.smallpro.model.vo.base;
 
 /**
  * Date: 2018/11/22
