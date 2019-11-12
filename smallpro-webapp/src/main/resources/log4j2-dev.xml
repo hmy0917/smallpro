@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration status="warn" packages="org.apache.logging.log4j.core,io.sentry.log4j2">
+    <appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{DEFAULT} %-5level [%15.15t] %-40.40c{1.} : %msg%n"/>
+        </Console>
+    </appenders>
+
+    <loggers>
+        <logger name="log.sentry" level="warn">
+            <appender-ref ref="Console"/>
+        </logger>
+
+        <root level="INFO">
+            <appender-ref ref="Console"/>
+        </root>
+    </loggers>
+</configuration>

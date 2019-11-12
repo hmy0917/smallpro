@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.keep.kit</groupId>
+        <artifactId>smallpro-parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>smallpro-webapp</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.keep.kit</groupId>
+            <artifactId>smallpro-service</artifactId>
+        </dependency>
+
+        <!-- spring boot -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.keep.boot</groupId>
+            <artifactId>keep-spring-boot-starter-codis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.keep.boot</groupId>
+            <artifactId>keep-spring-boot-starter-mongo</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.keep.boot</groupId>
+            <artifactId>keep-spring-boot-starter-dubbo</artifactId>
+        </dependency>
+
+        <!-- other -->
+        <dependency>
+            <groupId>com.keep.commons</groupId>
+            <artifactId>commons-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.getsentry.raven</groupId>
+            <artifactId>raven-log4j2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.keep.monitor</groupId>
+            <artifactId>monitor-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.keep.user.account</groupId>
+            <artifactId>user-account-rpc-service</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.keep.user.account</groupId>
+            <artifactId>user-account-model</artifactId>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <application.name>smallpro-webapp</application.name>
+    </properties>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <testResources>
+            <testResource>
+                <directory>src/test/resources</directory>
+            </testResource>
+        </testResources>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring.boot.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                        <configuration>
+                            <finalName>${application.name}</finalName>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

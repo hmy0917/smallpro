@@ -1,0 +1,225 @@
+<project
+        xmlns="http://maven.apache.org/POM/4.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.hmy.tool</groupId>
+    <artifactId>smallpro-parent</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>smallpro</name>
+
+    <modules>
+        <module>smallpro-common</module>
+        <module>smallpro-model</module>
+        <module>smallpro-dao</module>
+        <module>smallpro-service</module>
+        <module>smallpro-webapp</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- project -->
+            <dependency>
+                <groupId>com.keep.kit</groupId>
+                <artifactId>smallpro-common</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.keep.kit</groupId>
+                <artifactId>smallpro-model</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.keep.kit</groupId>
+                <artifactId>smallpro-dao</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.keep.kit</groupId>
+                <artifactId>smallpro-service</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+
+            <!-- keep commons -->
+            <dependency>
+                <groupId>com.keep.commons</groupId>
+                <artifactId>commons-core</artifactId>
+                <version>${keep.commons.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.keep.commons</groupId>
+                <artifactId>commons-utils</artifactId>
+                <version>${keep.commons.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.keep.commons</groupId>
+                <artifactId>commons-web</artifactId>
+                <version>${keep.commons.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.keep.commons</groupId>
+                <artifactId>commons-queue</artifactId>
+                <version>${keep.commons.queue.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.keep.monitor</groupId>
+                <artifactId>monitor-api</artifactId>
+                <version>${keep.monitor.version}</version>
+            </dependency>
+
+            <!-- keep models -->
+            <dependency>
+                <groupId>com.keep.user.account</groupId>
+                <artifactId>user-account-rpc-service</artifactId>
+                <version>0.2.9-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.keep.user.account</groupId>
+                <artifactId>user-account-model</artifactId>
+                <version>0.6.0-SNAPSHOT</version>
+            </dependency>
+
+            <!-- spring boot 全家桶-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- spring data 全家桶-->
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-releasetrain</artifactId>
+                <version>Ingalls-SR10</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- keep-spring-boot -->
+            <dependency>
+                <groupId>com.keep.boot</groupId>
+                <artifactId>keep-spring-boot-starter-codis</artifactId>
+                <version>${keep.spring.boot.starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.keep.boot</groupId>
+                <artifactId>keep-spring-boot-starter-mongo</artifactId>
+                <version>${keep.spring.boot.starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.keep.boot</groupId>
+                <artifactId>keep-spring-boot-starter-dubbo</artifactId>
+                <version>${keep.spring.boot.starter.version}</version>
+            </dependency>
+
+            <!-- utils -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>19.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.4</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.16.18</version>
+                <optional>true</optional>
+            </dependency>
+            <dependency>
+                <groupId>com.getsentry.raven</groupId>
+                <artifactId>raven-log4j2</artifactId>
+                <version>8.0.3</version>
+            </dependency>
+            <!-- jackson -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>2.6.5</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>2.6.5</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>2.6.5</version>
+            </dependency>
+            <!-- validation -->
+            <dependency>
+                <groupId>javax.validation</groupId>
+                <artifactId>validation-api</artifactId>
+                <version>2.0.0.Final</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>5.0.1.Final</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <properties>
+        <env>dev</env>
+        <spring.boot.version>1.5.10.RELEASE</spring.boot.version>
+        <slf4j.version>1.7.25</slf4j.version>
+
+        <!-- keep -->
+        <keep.commons.version>0.1.9</keep.commons.version>
+        <keep.commons.queue.version>0.4.2</keep.commons.queue.version>
+        <keep.monitor.version>2.2.0-SNAPSHOT</keep.monitor.version>
+        <keep.spring.boot.starter.version>0.3.13</keep.spring.boot.starter.version>
+        <keep.training.model.version>0.542</keep.training.model.version>
+    </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>Internal Releases</name>
+            <url>http://maven.gotokeep.com/nexus/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>Internal Snapshots</name>
+            <url>http://maven.gotokeep.com/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>

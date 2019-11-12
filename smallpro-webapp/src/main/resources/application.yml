@@ -1,0 +1,24 @@
+server:
+  port: 8081
+  tomcat:
+    accesslog:
+      enabled: true
+      pattern: "%h[%I] %l %u %t %r %s %b %D[ms]"
+    basedir: .
+
+endpoints:
+  enabled: true
+
+apollo:
+  bootstrap:
+    enabled: true
+    namespaces: INFRA.dubbo,INFRA.codis,INFRA.mongodb,KIT.puncheur.mongo
+
+mongo:
+  enables: kit
+
+codis:
+  enables: cache_training
+
+logging:
+  config: classpath:log4j2-${APP_ENV:dev}.xml

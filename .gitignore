@@ -1,0 +1,14 @@
+.idea/
+*.iml
+target/
+.arcconfig
+config-cache/
+
+*.sw[op]
+
+# eclipse ignore
+.settings/
+.project
+.classpath
+
+/logs
